@@ -113,6 +113,10 @@ const validateConfig = async (config) => {
       }
     });
 
+    worker.on('error', (err) => {
+      console.error('Error on worker', err);
+    });
+
     const ITC = {
       event: ({ name }) => {
         if (name !== 'started') return;
