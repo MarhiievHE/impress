@@ -51,7 +51,11 @@
   },
   "main": "impress.js",
   "types": "types/impress.d.ts",
-  "files": ["lib/", "schemas/", "types/"],
+  "files": [
+    "lib/",
+    "schemas/",
+    "types/"
+  ],
   "scripts": {
     "test": "npm run lint && npm run types && metatests test/",
     "types": "tsc -p types/tsconfig.json",
@@ -62,7 +66,7 @@
     "node": "16 || 18 || 19 || 20"
   },
   "dependencies": {
-    "metacom": "^3.0.0-alpha.10",
+    "metacom": "github:metarhia/metacom",
     "metaconfiguration": "^2.1.10",
     "metalog": "^3.1.9",
     "metaschema": "^2.1.3",
